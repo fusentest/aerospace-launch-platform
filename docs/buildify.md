@@ -6,6 +6,7 @@
 - Facility information
 - Technology showcase
 - Responsive design
+- User authentication with sign in page
 
 ### Designs
 - Dark theme with aerospace aesthetics
@@ -21,3 +22,4 @@
 - [x] Add facility showcase section
 - [x] Create technology features section
 - [x] Add footer with contact information
+- [x] Build sign in page with authentication

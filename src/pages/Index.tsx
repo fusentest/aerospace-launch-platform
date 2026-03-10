@@ -3,8 +3,10 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Rocket, Satellite, Radio, Zap, Globe, Shield, Calendar, MapPin } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const Index = () => {
+  const navigate = useNavigate();
   const missions = [
     {
       name: "Starlink Mission 47",
@@ -90,8 +92,11 @@ const Index = () => {
             <a href="#technology" className="text-muted-foreground hover:text-primary transition-colors">Technology</a>
             <a href="#contact" className="text-muted-foreground hover:text-primary transition-colors">Contact</a>
           </div>
-          <Button className="bg-primary text-primary-foreground hover:bg-primary/90">
-            Launch Schedule
+          <Button 
+            className="bg-primary text-primary-foreground hover:bg-primary/90"
+            onClick={() => navigate('/signin')}
+          >
+            Sign In
           </Button>
         </div>
       </nav>
