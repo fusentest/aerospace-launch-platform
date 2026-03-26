@@ -6,6 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Rocket, Mail, Lock, AlertCircle } from "lucide-react";
+import spaceshipBg from "@/assets/spaceship_signin_bg_bac9878d_0.png";
 
 const SignIn = () => {
   const navigate = useNavigate();
@@ -46,10 +47,10 @@ const SignIn = () => {
       <div 
         className="absolute inset-0 z-0"
         style={{
-          backgroundImage: 'url(https://images.unsplash.com/photo-1446776653964-20c1d3a81b06?w=1920&h=1080&fit=crop)',
+          backgroundImage: `url(${spaceshipBg})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          opacity: 0.15
+          opacity: 0.2
         }}
       />
       <div className="absolute inset-0 bg-gradient-to-br from-background via-background/95 to-background z-0" />
